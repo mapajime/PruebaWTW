@@ -1,0 +1,10 @@
+﻿@model LoginModel
+@if (TempData["UsuarioActual"]  == null)
+{
+    <div>Usuario no encontrado</div>
+    @Html.ActionLink("Regresar", "Login")
+}
+else
+{
+    <div>Bienvenido @TempData["UsuarioActual"]</div>
+}
